@@ -1,9 +1,27 @@
-# functional-bowling-ts
+# BSC Transaction filter
 
-Bowling Kata using functional programming design in TypeScript.
+## Prerequiste
 
-You can compare between OOP Modeling vs FP Modeling in corresponding folder (fp, oop)
+1. Get API Key from [BscScan](https://www.bscscan.com/)
+1. Put into file `.env` like this
 
-Learn more about what is a functional programming design, and how is it diffrent from object-oriented or procedural design with me. I will write an article, blog or a presentation later.
+```
+BSC_API_KEY={YOUR_KEY}
+```
 
-Bowling Kata: https://codingdojo.org/kata/Bowling/
+3. Install [Node.js](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/)
+4. Install dependencies via command `yarn`
+
+## Usage
+
+```
+yarn start --address="0x28579ECA0a326E53340Edd93e18698D379876a04" --methodSignature="earn(address)"
+```
+
+This will get all the transaction from address `0x28579ECA0a326E53340Edd93e18698D379876a04` with method signature `earn(address)`
+
+## Possible feature
+
+- [ ] Export transactions to Database
+- [ ] Export transactions to file
+- [ ] Preset some famous address
